@@ -45,7 +45,7 @@ Output: test
 
 ## Tips & Tricks
 
-I recommend shorthanding the CLI tool command even more. Be the lazy programmer.
+I recommend shorthanding the CLI tool command. Be the lazy programmer.
 
 ```bash
 # Linux/MacOS
