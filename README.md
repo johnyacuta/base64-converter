@@ -76,6 +76,8 @@ Pending Features:
 
 ### Getting Started
 
+[Install Poetry](https://python-poetry.org/docs/)
+
 CD into the root directory and run:
 
 ```bash
