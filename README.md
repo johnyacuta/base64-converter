@@ -73,6 +73,24 @@ Pending Features:
 
 - Support iterations to allow multiple encoding/decoding in a single line.
 
+### Getting Started
+
+CD into the root directory and run:
+
+```bash
+# 1. It creates a virtual environment for your project
+$ poetry add typer[all]
+
+# 2. Activate that new virtual environment
+$ poetry shell
+
+# 3. Install the package
+$ poetry install
+
+# 4. Test the CLI program
+$ base64-converter --help
+```
+
 ## How it Works
 
 Base64 Converter is written in Python and built on Typer. Typer is a library for building CLI applications.
