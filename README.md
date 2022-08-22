@@ -71,6 +71,7 @@ To make a contribution, fork the repo, make your changes and then submit a pull 
 
 Pending Features:
 
+- Add code coverage GitHub badge for repository
 - Support iterations to allow multiple encoding/decoding in a single line.
 
 ### Getting Started
