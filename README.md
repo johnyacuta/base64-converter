@@ -42,3 +42,37 @@ $ base64-converter e dGVzdA==
 
 Output: test
 ```
+
+## Tips & Tricks
+
+I recommend shorthanding the CLI tool command even more. Be the lazy programmer.
+
+```bash
+# Linux/MacOS
+$ alias b=base64-converter
+
+# Windows
+$ add alias base64-converter b
+
+# Run Base64 Encode
+$ b e test
+
+Output: dGVzdA==
+
+# Run Base64 Decode
+$ b d dGVzdA==
+
+Output: test
+```
+
+## Contributing
+
+To make a contribution, fork the repo, make your changes and then submit a pull request. Please try to adhere to the existing style. If you've discovered a bug or have a feature request, create an issue.
+
+Pending Features:
+
+- Support iterations to allow multiple encoding/decoding in a single line.
+
+## How it Works
+
+Base64 Converter is written in Python and built on Typer. Typer is a library for building CLI applications.
