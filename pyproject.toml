@@ -3,9 +3,14 @@ name = "base64-converter"
 version = "0.1.0"
 description = ""
 authors = ["johnsk8 <Ludin@DESKTOP-BAB0NU4.(none)>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+base64-converter = "base64_converter.main:app"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+typer = {extras = ["all"], version = "^0.6.1"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
