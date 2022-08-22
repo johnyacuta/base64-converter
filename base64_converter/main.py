@@ -1,4 +1,5 @@
 import typer
+import base64
 
 
 app = typer.Typer()
@@ -7,21 +8,28 @@ app = typer.Typer()
 @app.callback()
 def callback():
     """
-    Awesome Portal Gun
+    Base64 Converter
     """
 
 
-@app.command()
-def shoot():
+@app.command("e")
+def encode(data: str):
     """
-    Shoot the portal gun
+    Base64 encode
     """
-    typer.echo("Shooting portal gun")
+    typer.echo(f"Data: {data}")
+
+    data_string_bytes = data.encode("ascii")
+
+    base64_bytes = base64.b64encode(data_string_bytes)
+    base64_string = base64_bytes.decode("ascii")
+
+    typer.echo(f"Encoded data: {base64_string}")
 
 
-@app.command()
-def load():
+@app.command("d")
+def decode(data: str):
     """
-    Load the portal gun
+    Base64 decode
     """
-    typer.echo("Loading portal gun")
+    typer.echo(f"Data: {data}")
