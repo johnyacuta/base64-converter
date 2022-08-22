@@ -12,6 +12,11 @@ def test_version():
 
 def test_base64_encode():
     result = runner.invoke(app, ["e", "test"])
-    print("Result:", result.stdout)
     assert result.exit_code == 0
     assert "dGVzdA==" in result.stdout
+
+
+def test_base64_decode():
+    result = runner.invoke(app, ["d", "dGVzdA=="])
+    assert result.exit_code == 0
+    assert "test" in result.stdout
