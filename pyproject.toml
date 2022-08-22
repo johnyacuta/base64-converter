@@ -2,7 +2,7 @@
 name = "base64-converter"
 version = "0.1.0"
 description = ""
-authors = ["johnsk8 <Ludin@DESKTOP-BAB0NU4.(none)>"]
+authors = ["johnyacuta <example@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.scripts]
