@@ -97,3 +97,7 @@ $ base64-converter --help
 ## How it Works
 
 Base64 Converter is written in Python and built on Typer. Typer is a library for building CLI applications.
+
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
